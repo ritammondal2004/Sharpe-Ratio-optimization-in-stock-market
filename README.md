@@ -37,20 +37,20 @@ The Sharpe Ratio is a key metric used to evaluate how well an investment is perf
 In simple terms, the Sharpe Ratio tells you how much return you're getting for every unit of risk you take. It compares your investment returns to a risk-free asset like a fi xed deposit or government bond, and then adjusts that return based on the volatility (or uncertainty) of the investment. 
 
 A **higher Sharpe Ratio** means you're getting better **risk-adjusted returns**, which is a good sign — but it also means the investment might be more volatile. So if you're targeting higher returns, you also have to be ready to handle bigger ups and downs. 
-The Sharpe ratio's numerator is the difference expected returns over time between realized and a benchmark such as the [risk-free rate of return](https://www.investopedia.com/terms/r/risk-freerate.asp) or the performance of a particular investment category. Its denominator is the standard deviation of returns over the same period of time, a measure of volatility and risk. For investors and fund managers, the Sharpe Ratio acts like a performance fi lter — helping them decide which funds are truly delivering value without blindly chasing returns that come with too much risk. It’s especially useful when comparing funds or choosing the most effi cient mix of assets in a portfolio.
-The objective function for optimization was defi ned as the negative Sharpe Ratio since [scipy.optimize.minimize()](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.minimize.html) minimizes functions by default.
+The sharpe ratio's numerator is the difference expected returns over time between realized and a benchmark such as the [risk-free rate of return](https://www.investopedia.com/terms/r/risk-freerate.asp) or the performance of a particular investment category. Its denominator is the standard deviation of returns over the same period of time, a measure of volatility and risk. For investors and fund managers, the Sharpe Ratio acts like a performance filter — helping them decide which funds are truly delivering value without blindly chasing returns that come with too much risk. It’s especially useful when comparing funds or choosing the most efficient mix of assets in a portfolio.
+The objective function for optimization was defined as the negative Sharpe Ratio since [scipy.optimize.minimize()](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.minimize.html) minimizes functions by default.
 
-## 🔍 Literature Review
+## 🔍 Literature Review  
 Rooted in **Modern Portfolio Theory (MPT)** by Harry Markowitz. It relies on mean-variance optimization—essentially balancing average returns against volatility. This work integrates extensions like:
 - ESG considerations
 - Liquidity constraints
 - Sector allocation caps
 
-We bridge theory and practice by enhancing the mean-variance model to align with fund manager behavior and sustainability requirements.
+Through bridge theory and practice by enhancing the mean-variance model to align with fund manager behavior and sustainability requirements.
 
 ---
 
-## 🎯 Objective
+## 🎯 Objective  
 To allocate weights to a set of stocks such that the portfolio achieves:
 - Maximum Sharpe Ratio or maximize net return per unit of risk taken
 - Subject to constraints on sector bounds, volatility, ESG scores, and liquidity
