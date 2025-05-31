@@ -65,7 +65,8 @@ To allocate weights to a set of stocks such that the portfolio achieves:
 ### or in algebric form
 
 
-![image](https://github.com/user-attachments/assets/25340f26-322d-413b-b922-16690a8d803d)
+![image](https://github.com/user-attachments/assets/7def6569-ee8d-4b4f-a9b0-feef052ab79d)
+
 
 
 ### Constraints:
@@ -82,6 +83,7 @@ Used parameter In this model:
 - COV(i,j) = Covariance between stock i and stock j
 - wᵢ = weight assigned to asset i (decision variable)
 - w = vector of weight allocated (vector of decision variable)
+- Rf = Annual risk free rate of return 
 
 ---
 
