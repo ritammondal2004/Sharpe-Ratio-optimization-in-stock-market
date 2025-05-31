@@ -5,13 +5,20 @@
 Indian Institute of Technology (IIT), Kharagpur 
 - Dual Degree, Industrial & Systems Engineering
 - Indian Institute of Technology Kharagpur  
-- connect me on: [LinkedIn](https://www.linkedin.com/in/ritam-mondal-86a369287/)
+- connect me on:
+  <p align="left">
+  <a href="https://www.linkedin.com/in/ritam-mondal-86a369287/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white&style=for-the-badge"/></a>  
+</p> 
+
 - Email: ritamm134@gmail.com
 
 **Under the guidance of**  
-Prof. Abhishek Sharma, IIT Kharagpur
+Prof. Abhishek Sharma, IIT Kharagpur     
+(*I had done this project during my B.Tech at IIT kgp as an Operations Research project*)
 
 ---
+
 
 ## 📌 Project Overview
 This project implements Sharpe Ratio-based financial portfolio optimization using real Indian stock data. The model **maximizes return** per unit of risk under practical constraints such as sector allocation limits, ESG scores, liquidity thresholds, and volatility caps. The optimization is solved using **SLSQP** and visualized through **Monte Carlo** simulation and efficient frontier plots.
@@ -116,13 +123,18 @@ Each combination was optimized using SLSQP, and results were stored to evaluate 
    <img src="data_files/SLSQP_flow.png" alt="SLSQP" width="500" height="450"/>
    
 
-7. Monte Carlo Simulation for Portfolio Generation and Validation
+7. [Monte Carlo Simulation](https://en.wikipedia.org/wiki/Monte_Carlo_method) for Portfolio Generation and Validation
    - Generate thousands of random portfolios with varying weights.
    - Calculate expected return and volatility for each to plot the **efficient frontier.**
    - Helps validate whether the optimization results are close to the theoretical maximum Sharpe Ratio.
    - Useful for visualizing trade-offs between risk and return across many possible portfolios.
    
     <img src="data_files/monte_carlo.png" alt="monte_carlo" width="600" height="450"/>
+
+---
+## 🔁 Workflow
+
+<img src="data_files/workflow.png" alt="workflow" width="600" height="450"/>
 
 ---
 
@@ -158,13 +170,34 @@ Each combination was optimized using SLSQP, and results were stored to evaluate 
 
 ## 🔎 Risk Analysis
 ### Sector-Wise Risk
-Calculated risk per sector based on variance contribution.
 
+## 📊 Insight:
+
+- ⚡ **Energy sector** carries the **highest risk (≈ 0.0042)**, likely due to higher volatility of its constituent stocks.
+- 💻 **IT (0.0016)** and 🏥 **Healthcare (0.0015)** are moderately risky sectors.
+- 🏦 **Banking (0.0007)** and 📡 **Telecommunication (0.0010)** show lower risk contributions.
+-  📦 **FMCG** has the **lowest sector risk (≈ 0.0003)**, making it the most stable segment in the portfolio.
+
+> ✅ This analysis provides a clear view of how each sector contributes to overall portfolio volatility, helping in risk-aware decision-making.  
+
+**Calculated risk per sector based on variance contribution.**
+             
  <img src="data_files/sector_wise_risk.png" alt="sector_risk" width="550" height="450"/>
-
-
+                                
+                              
 ### Stock-Wise Risk 
-Breakdown of risk exposure at individual stock level.
+
+## 📊 Insight:
+
+- 🔺 **ADANIPOWER** has the **highest individual risk (≈ 0.0567)**, suggesting high volatility or a relatively large allocation.
+- 🔹 Followed by **FORTIS (0.0387)**, **TATACOMM (0.0311)**, and **ZENSARTECH (0.0291)** — all contributing moderately to portfolio volatility.
+- 🟢 **ITC (0.0164)** and **RPOWER (0.0250)** exhibit relatively lower individual risk.
+- ⚠️ **JUBL PHARMA** and **RBL BANK** have **zero risk contribution**, aligning with their **0% allocation** in the optimal portfolio.
+
+> ✅ This analysis confirms that higher weights or higher variance directly increase individual stock risk, helping identify which stocks drive overall portfolio volatility.
+
+
+**Breakdown of risk exposure at individual stock level.**
                                                          
                                       
 <img src="data_files/stock_wise_risk.png" alt="stock_risk" width="550" height="450"/>
@@ -172,7 +205,7 @@ Breakdown of risk exposure at individual stock level.
 ---
 
 ## 🧾 Conclusion
-This project demonstrates how Sharpe Ratio optimization can be used to build a realistic and robust portfolio. Incorporating ESG, sector, and liquidity constraints makes the solution applicable in real-world asset management. Our results show clear risk-return tradeoffs and how optimal asset allocation shifts under different scenarios.
+This project demonstrates how Sharpe Ratio optimization can be used to build a realistic and robust portfolio. Incorporating ESG, sector, and liquidity constraints makes the solution applicable in real-world asset management. Our results show clear **risk-return tradeoffs** and how optimal asset allocation shifts under different scenarios.
 
 ---
 
