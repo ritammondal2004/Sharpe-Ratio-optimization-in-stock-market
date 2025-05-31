@@ -10,7 +10,7 @@ Indian Institute of Technology (IIT), Kharagpur
   <a href="https://www.linkedin.com/in/ritam-mondal-86a369287/" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white&style=for-the-badge"/></a>  
 </p> 
-
+  
 - Email: ritamm134@gmail.com
 
 **Under the guidance of**  
@@ -19,6 +19,7 @@ Prof. Abhishek Sharma, IIT Kharagpur
 
 ---
 
+you can find [shares data](data_files/shares_Data.csv) here
 
 ## 📌 Project Overview
 This project implements Sharpe Ratio-based financial portfolio optimization using real Indian stock data. The model **maximizes return** per unit of risk under practical constraints such as sector allocation limits, ESG scores, liquidity thresholds, and volatility caps. The optimization is solved using **SLSQP** and visualized through **Monte Carlo** simulation and efficient frontier plots.
@@ -93,6 +94,8 @@ To evaluate how varying constraint values impact portfolio performance, we perfo
 
 > 🧮 Total combinations tested: **2160**
 
+you can find all [iteration results output](data_files/optimization_results.csv) here
+            
 Each combination was optimized using SLSQP, and results were stored to evaluate which constraint set gave the highest Sharpe Ratio.
 
 📍 
