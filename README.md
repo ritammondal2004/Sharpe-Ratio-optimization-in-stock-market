@@ -32,7 +32,7 @@ Financial portfolio optimization is the backbone of informed investment decision
 ---
 ##  Sharpe Ratio Definition
 
-The Sharpe Ratio is a key metric used to evaluate how well an investment is performing compared to the amount of risk it's taking. It was developed by William F. Sharpe, a Nobel Prize–winning economist, and it's widely used in fi nance — especially when comparing mutual funds or building optimized portfolios.
+The Sharpe Ratio is a key metric used to evaluate how well an investment is performing compared to the amount of risk it's taking. It was developed by William F. Sharpe, a Nobel Prize–winning economist, and it's widely used in finance — especially when comparing mutual funds or building optimized portfolios.
 
 In simple terms, the Sharpe Ratio tells you how much return you're getting for every unit of risk you take. It compares your investment returns to a risk-free asset like a fi xed deposit or government bond, and then adjusts that return based on the volatility (or uncertainty) of the investment. 
 
@@ -94,7 +94,7 @@ To evaluate how varying constraint values impact portfolio performance, we perfo
 - ESG minimums: [35, 50, 65, 80]
 - Liquidity minimums: [40k to 440k in steps of 80k]
 
-> 🧮 Total combinations tested: **2160**
+> 🧮 *Total combinations tested: **2160***
 
 you can find all [iteration results output](data_files/optimization_results.csv) here
             
@@ -143,7 +143,7 @@ Each combination was optimized using SLSQP, and results were stored to evaluate 
 
 ---
 
-## 📌Data Insights and Optimization Results
+## Data Insights and Optimization Results
 - **Optimal Sharpe Ratio**: 1.120895
 - **Portfolio Return**: 12.707%
 - **Portfolio Volatility**: 11.31%
@@ -152,7 +152,7 @@ Each combination was optimized using SLSQP, and results were stored to evaluate 
 - INFY: 21.93%
 - ADANIPOWER: 19.01%
 - TATACOMM: 12.25%
-- Visualize: 📍
+- Visualize: 
   
 - **stock wise allocation** 
 
@@ -165,7 +165,7 @@ Each combination was optimized using SLSQP, and results were stored to evaluate 
 - IT: 32.69%
 - Energy: 25.06%
 - Telecom: 12.25%
-- Visualize: 📍
+- Visualize: 
 
 - **Sector-wise allocation**
      
@@ -176,14 +176,14 @@ Each combination was optimized using SLSQP, and results were stored to evaluate 
 ## 🔎 Risk Analysis
 ### Sector-Wise Risk
 
-## 📊 Insight:
+##  Insight:
 
-- ⚡ **Energy sector** carries the **highest risk (≈ 0.0042)**, likely due to higher volatility of its constituent stocks.
-- 💻 **IT (0.0016)** and 🏥 **Healthcare (0.0015)** are moderately risky sectors.
-- 🏦 **Banking (0.0007)** and 📡 **Telecommunication (0.0010)** show lower risk contributions.
--  📦 **FMCG** has the **lowest sector risk (≈ 0.0003)**, making it the most stable segment in the portfolio.
+-  **Energy sector** carries the **highest risk (≈ 0.0042)**, likely due to higher volatility of its constituent stocks.
+-  **IT (0.0016)** and 🏥 **Healthcare (0.0015)** are moderately risky sectors.
+-  **Banking (0.0007)** and 📡 **Telecommunication (0.0010)** show lower risk contributions.
+-  **FMCG** has the **lowest sector risk (≈ 0.0003)**, making it the most stable segment in the portfolio.
 
-> ✅ This analysis provides a clear view of how each sector contributes to overall portfolio volatility, helping in risk-aware decision-making.  
+> This analysis provides a clear view of how each sector contributes to overall portfolio volatility, helping in risk-aware decision-making.  
 
 **Calculated risk per sector based on variance contribution.**
              
@@ -192,14 +192,14 @@ Each combination was optimized using SLSQP, and results were stored to evaluate 
                               
 ### Stock-Wise Risk 
 
-## 📊 Insight:
+##  Insight:
 
-- 🔺 **ADANIPOWER** has the **highest individual risk (≈ 0.0567)**, suggesting high volatility or a relatively large allocation.
-- 🔹 Followed by **FORTIS (0.0387)**, **TATACOMM (0.0311)**, and **ZENSARTECH (0.0291)** — all contributing moderately to portfolio volatility.
-- 🟢 **ITC (0.0164)** and **RPOWER (0.0250)** exhibit relatively lower individual risk.
+-  **ADANIPOWER** has the **highest individual risk (≈ 0.0567)**, suggesting high volatility or a relatively large allocation.
+-  Followed by **FORTIS (0.0387)**, **TATACOMM (0.0311)**, and **ZENSARTECH (0.0291)** — all contributing moderately to portfolio volatility.
+-  **ITC (0.0164)** and **RPOWER (0.0250)** exhibit relatively lower individual risk.
 - ⚠️ **JUBL PHARMA** and **RBL BANK** have **zero risk contribution**, aligning with their **0% allocation** in the optimal portfolio.
 
-> ✅ This analysis confirms that higher weights or higher variance directly increase individual stock risk, helping identify which stocks drive overall portfolio volatility.
+>  This analysis confirms that higher weights or higher variance directly increase individual stock risk, helping identify which stocks drive overall portfolio volatility.
 
 
 **Breakdown of risk exposure at individual stock level.**
@@ -214,7 +214,7 @@ This project demonstrates how Sharpe Ratio optimization can be used to build a r
 
 ---
 
-## 💻 System Configuration
+##  System Configuration
 - Google Colab (Jupyter notebook)
 - CPU: Intel core i5-12500H, 16 GB RAM
 - GPU: NVIDIA RTX 1650 Ti
@@ -229,15 +229,25 @@ Colab link: [Sharpe Ratio Optimization Notebook](https://colab.research.google.c
 ## 📚 References
 
 https://docs.quantum.ibm.com/api/qiskit/0.19/qiskit.aqua.components.optimizers.SLSQP
+
 https://groww.in/p/sharpe-ratio
+
 https://www.researchgate.net/publication/383713257_Impact_of_ESG_Risk_on_Portfolio_Optimization_and_Returns_An_Analysis_Using_the_Markowitz_Model
+
 https://link.springer.com/article/10.1007/s10479-024-06189-w?utm
+
 https://www.ijcaonline.org/archives/volume175/number34/noaman-2020-ijca-920896.pdf
+
 https://www.investopedia.com/terms/m/modernportfoliotheory.asp
+
 https://www.investopedia.com/impact-investing-with-a-robo-advisor-4775379
+
 https://arxiv.org/html/2302.12291v2
+
 https://web.stanford.edu/~wfsharpe/art/sr/sr.htm
+
 https://market-bulls.com/max-sharpe-ratio-portfolio-optimization
+
 https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID4047669_code2700128.pdf?abstractid=3959708&mirid=1&type=2
 
 Data source:
